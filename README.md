@@ -29,11 +29,12 @@ After building the files, the examples can run by executing the following the co
 cd build
 ./Example1_RegularTemplate
 
-# for the example with regular template
+# for the example with irregular template
 cd build
 ./Example1_IrregularTemplate
 ```
 
+The texture-maps for both examples can be found in the folder `Texturemaps`. The texturemap for the template with regular mesh is a Spiderman poster. As for the template with a nonrectangular shape and an irregular shape, a shoe sole is chosen. As done in this example, in these cases, the texturemap of the object should be placed in the center of a totally white image.
 
 
 ### Using ROBUSfT as third party
