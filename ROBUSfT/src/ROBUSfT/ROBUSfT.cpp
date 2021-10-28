@@ -459,54 +459,6 @@ void Robusft::extract_keypoints_GPU(string type, VideoCapture cap)
 	PopSift.uninit();		
 }
 
-void Robusft::extract_keypoints_CPU(string type, VideoCapture cap)
-{
-	if(type == "Template")
-	{
-		vector<KeyPoint> features;
-		auto detector = SIFT::create();
-		detector->detectAndCompute(Template_image_BW, Mat(),features, Template.Descriptors);
-		Template.nKeypoints = features.size();
-		Template.Features.resize(2, vector<double>(Template.nKeypoints));
-		for (int i = 0; i < Template.nKeypoints; i++)
-		{
-			Template.Features[0][i] = features[i].pt.x;
-			Template.Features[1][i] = features[i].pt.y;
-		}
-		
-	}
-	else if(type == "Image")
-	{
-		while(true)
-		{
-			capture_image(cap);
-
-			job_done = false;
-			lock_guard<mutex> lg(my_mutex);
-			
-			// Extracting Keypoints in the Image ===========================
-			auto start_Keypoint = chrono::high_resolution_clock::now();
-			
-			vector<KeyPoint> features;
-			auto detector = SIFT::create();
-			detector->detectAndCompute(Captured_image_BW, Mat(), features, Descriptors);
-			nKeypoints = features.size();
-			Features = vector<vector<double>>(2, vector<double>(nKeypoints));
-			for (int i = 0; i < nKeypoints; i++)
-			{
-				Features[0][i] = features[i].pt.x;
-				Features[1][i] = features[i].pt.y;
-			}
-
-			auto stop_Keypoint = chrono::high_resolution_clock::now();
-			if(ROBUSfT_report) cout << "Keypoint Extraction CPU Thread = " << std::chrono::duration<double>(stop_Keypoint - start_Keypoint).count() << " (s)" << endl;
-
-			job_done = true;
-			con_var.notify_one();
-		}
-	}
-}
-
 void Robusft::get_BaryCentricCoordsOfKeypoints()
 	{
 		Template.nKeypoints = Template.Features[0].size();

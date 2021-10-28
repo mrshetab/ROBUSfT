@@ -109,7 +109,6 @@ public:
 	void setCalibrationMat(DoubleVector2D calibrationMat);
 	void build_template(bool load_template = false);
 	void extract_keypoints_GPU(string type, VideoCapture cap = VideoCapture(0));
-	void extract_keypoints_CPU(string type, VideoCapture cap = VideoCapture(0));
 	void get_BaryCentricCoordsOfKeypoints();
 	void capture_image(VideoCapture cap);
 	void match(float ratio_thresh = 0.8f);
