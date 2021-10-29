@@ -1,7 +1,14 @@
 # ROBUSfT
 
 ROBUSFT is a C++ library for monocular real-time 3D shape tracking of isometrically deforming objects. 
+This library is prsented in two versions: CPU-GPU (the current library) and Fully CPU (can be found in this link).
+The current version of ROBUSfT is capable of tracking surfaces up to 30fps. This speed is 20fps for the fully CPU version. 
 
+
+
+## Dependencies
+
+PopSift depends on:
 
 
 ## Build
@@ -35,7 +42,7 @@ cd build
 ```
 
 The texture-maps for both examples can be found in the folder `Texturemaps`. The texturemap for the template with regular mesh is a Spiderman poster. A 6x10 mesh will be created for this case. 
-As for the template with a nonrectangular shape and an irregular mesh, a shoe sole is chosen. Generally in these cases, the texturemap of the object should be placed in the center of a totally white image as it is done for the shoe sole. The member function build_template will separate the textured section and generate a triangular mesh there.
+As for the template with a nonrectangular shape and an irregular mesh, a shoe sole is chosen. Generally in these cases, the texturemap of the object should be placed in the center of a totally white image as it is done for the shoe sole. The member function build_template will separate the textured section and generate a triangular mesh there. The number of nodes on the boundary of the texturemap and inside will be chosen by the user in the code. 
 
 
 ### Using ROBUSfT as third party
