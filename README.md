@@ -1,15 +1,21 @@
 # ROBUSfT
 
-ROBUSFT is a C++ library for monocular real-time 3D shape tracking of isometrically deforming objects. 
+ROBUSFT is a ready-to-use C++ library for monocular real-time 3D shape tracking of isometrically deforming objects. 
+ROBUSFT forms a template from a deforming object and using that, it infers the deformation of the object in an input image (or a series of input images in a video). Each frame is processed indivisually. This makes ROBUSfT wide-baseline and resistant against losing the object in the video.  
 This library is prsented in two versions: CPU-GPU (the current library) and Fully CPU (can be found in this link).
 The current version of ROBUSfT is capable of tracking surfaces up to 30fps. This speed is 20fps for the fully CPU version. 
 
-
-
 ## Dependencies
 
-PopSift depends on:
+ROBUSfT depends on:
 
+* OpenCV 
+
+* Eigen3 
+
+* PopSift (an open-source implementation of the SIFT algorithm in CUDA). To check the installation procedure and dependencies please visit this link. 
+
+If you don't have a suitable Cuda-adapted hardware and wish to use a pure CPU version please visit our full CPU ROBUSfT in this link.  
 
 ## Build
 
