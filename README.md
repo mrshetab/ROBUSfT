@@ -39,11 +39,11 @@ After building the files, the examples can run by executing the following the co
 
 ```cmake
 # for the example with regular template
-cd build
+cd build/examples
 ./Example1_RegularTemplate
 
 # for the example with irregular template
-cd build
+cd build/examples
 ./Example2_IrregularTemplate
 ```
 
