@@ -47,8 +47,7 @@ cd build
 ./Example2_IrregularTemplate
 ```
 
-The texture-maps for both examples can be found in the folder `Texturemaps`. The texturemap for the template with regular mesh is a Spiderman poster. A 6x10 mesh will be created for this case. 
-As for the template with a nonrectangular shape and an irregular mesh, a shoe sole is chosen. Generally in these cases, the texturemap of the object should be placed in the center of a totally white image as it is done for the shoe sole. The member function build_template will separate the textured section and generate a triangular mesh there. The number of nodes on the boundary of the texturemap and inside will be chosen by the user in the code. 
+The texture-maps for both examples can be found in the folder `Texturemaps`. 
+Regarding the template with regular mesh, a Spiderman poster is selected as the texturemap. In the code, the number of mesh points in X and Y directions are chosen as 6 and 10, respectively. Foretheremore, the actual width of the object in X direction is set as 0.192m which is the width of the poster when is printed on an A4 paper.
 
-
-<!-- ### Using ROBUSfT as third party -->
+As for the template with a nonrectangular shape and an irregular mesh, a shoe sole is chosen. Generally in these cases with an object with nonrectangular texturemaps, the texturemap of the object should be placed in the center of a totally white image as it is done for the shoe sole. The member function build_template will detach the textured region and generate a triangular mesh inside of that. Inside the code, the number of nodes on the boundary and inside of the texturemap will be chosen by the user.
