@@ -55,3 +55,7 @@ As for the template with a nonrectangular shape and an irregular mesh, a shoe so
 The 3D coordinates of the object mesh in the camera coordinates frame are stored in the member variable `Shape_3d` as a 3xN vector where N denotes the number of mesh points. The projection of this 3D coordinates on the image is stored in the member variable `Shape_2d` as a 2xN vector. Both vectors can be printed using the function `show_array_2D()`. 
 
 In order to switch the report (will be printed in terminal) and the plots on or off, the global boolean variable `ROBUSfT_report` and `ROBUSfT_plot` can be set. 
+
+## Acknowledgements
+
+This work was supported by project SOFTMANBOT, which received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 869855.
