@@ -1,0 +1,110 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "ROBUSfT",
+					"jsonFile" : "directory-ROBUSfT-Debug-b547351d7902f8bdef6e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "ROBUSfT",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "examples",
+					"jsonFile" : "directory-examples-Debug-1c8b83b621b6ef38a245.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "examples",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "ROBUSfTt",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "Example1_RegularTemplate::@714eac15f71a94114fdf",
+					"jsonFile" : "target-Example1_RegularTemplate-Debug-49980e566e6b5dc0a6d7.json",
+					"name" : "Example1_RegularTemplate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Example2_IrregularTemplate::@714eac15f71a94114fdf",
+					"jsonFile" : "target-Example2_IrregularTemplate-Debug-d0cd4b89bed8363d2f61.json",
+					"name" : "Example2_IrregularTemplate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ROBUSfT::@72b0f646fb964fbc76e0",
+					"jsonFile" : "target-ROBUSfT-Debug-ba8fbd6aa1f394dff85e.json",
+					"name" : "ROBUSfT",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/reza/Codes/Git/ROBUSfT/build",
+		"source" : "/home/reza/Codes/Git/ROBUSfT"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

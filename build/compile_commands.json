@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/reza/Codes/Git/ROBUSfT/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7 -DROBUSfT_EXPORTS -DROOT_FOLDER=\\\"/home/reza/Codes/Git/ROBUSfT\\\" -I/home/reza/Codes/Git/ROBUSfT/ROBUSfT/src -isystem /usr/local/include/opencv4 -isystem /usr/local/include/eigen3 -isystem /usr/local/cuda-11.3/include -Wall -Wextra -fopenmp -g -fPIC -std=gnu++17 -o ROBUSfT/CMakeFiles/ROBUSfT.dir/src/ROBUSfT/ROBUSfT.cpp.o -c /home/reza/Codes/Git/ROBUSfT/ROBUSfT/src/ROBUSfT/ROBUSfT.cpp",
+  "file": "/home/reza/Codes/Git/ROBUSfT/ROBUSfT/src/ROBUSfT/ROBUSfT.cpp"
+},
+{
+  "directory": "/home/reza/Codes/Git/ROBUSfT/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7 -DROBUSfT_EXPORTS -DROOT_FOLDER=\\\"/home/reza/Codes/Git/ROBUSfT\\\" -I/home/reza/Codes/Git/ROBUSfT/ROBUSfT/src -isystem /usr/local/include/opencv4 -isystem /usr/local/include/eigen3 -isystem /usr/local/cuda-11.3/include -Wall -Wextra -fopenmp -g -fPIC -std=gnu++17 -o ROBUSfT/CMakeFiles/ROBUSfT.dir/src/ROBUSfT/delaunator_h.cpp.o -c /home/reza/Codes/Git/ROBUSfT/ROBUSfT/src/ROBUSfT/delaunator_h.cpp",
+  "file": "/home/reza/Codes/Git/ROBUSfT/ROBUSfT/src/ROBUSfT/delaunator_h.cpp"
+},
+{
+  "directory": "/home/reza/Codes/Git/ROBUSfT/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7 -DROBUSfT_EXPORTS -DROOT_FOLDER=\\\"/home/reza/Codes/Git/ROBUSfT\\\" -I/home/reza/Codes/Git/ROBUSfT/ROBUSfT/src -isystem /usr/local/include/opencv4 -isystem /usr/local/include/eigen3 -isystem /usr/local/cuda-11.3/include -Wall -Wextra -fopenmp -g -fPIC -std=gnu++17 -o ROBUSfT/CMakeFiles/ROBUSfT.dir/src/ROBUSfT/functions.cpp.o -c /home/reza/Codes/Git/ROBUSfT/ROBUSfT/src/ROBUSfT/functions.cpp",
+  "file": "/home/reza/Codes/Git/ROBUSfT/ROBUSfT/src/ROBUSfT/functions.cpp"
+},
+{
+  "directory": "/home/reza/Codes/Git/ROBUSfT/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7 -DROBUSfT_EXPORTS -DROOT_FOLDER=\\\"/home/reza/Codes/Git/ROBUSfT\\\" -I/home/reza/Codes/Git/ROBUSfT/ROBUSfT/src -isystem /usr/local/include/opencv4 -isystem /usr/local/include/eigen3 -isystem /usr/local/cuda-11.3/include -Wall -Wextra -fopenmp -g -fPIC -std=gnu++17 -o ROBUSfT/CMakeFiles/ROBUSfT.dir/src/ROBUSfT/bbs_eigen.cpp.o -c /home/reza/Codes/Git/ROBUSfT/ROBUSfT/src/ROBUSfT/bbs_eigen.cpp",
+  "file": "/home/reza/Codes/Git/ROBUSfT/ROBUSfT/src/ROBUSfT/bbs_eigen.cpp"
+},
+{
+  "directory": "/home/reza/Codes/Git/ROBUSfT/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7 -DROOT_FOLDER=\\\"/home/reza/Codes/Git/ROBUSfT\\\" -I/home/reza/Codes/Git/ROBUSfT/ROBUSfT/src -isystem /usr/local/include/opencv4 -isystem /usr/local/include/eigen3 -isystem /usr/local/cuda-11.3/include -Wall -Wextra -fopenmp -g -std=gnu++17 -o examples/CMakeFiles/Example1_RegularTemplate.dir/Example1_RegularTemplate.cpp.o -c /home/reza/Codes/Git/ROBUSfT/examples/Example1_RegularTemplate.cpp",
+  "file": "/home/reza/Codes/Git/ROBUSfT/examples/Example1_RegularTemplate.cpp"
+},
+{
+  "directory": "/home/reza/Codes/Git/ROBUSfT/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7 -DROOT_FOLDER=\\\"/home/reza/Codes/Git/ROBUSfT\\\" -I/home/reza/Codes/Git/ROBUSfT/ROBUSfT/src -isystem /usr/local/include/opencv4 -isystem /usr/local/include/eigen3 -isystem /usr/local/cuda-11.3/include -Wall -Wextra -fopenmp -g -std=gnu++17 -o examples/CMakeFiles/Example2_IrregularTemplate.dir/Example2_IrregularTemplate.cpp.o -c /home/reza/Codes/Git/ROBUSfT/examples/Example2_IrregularTemplate.cpp",
+  "file": "/home/reza/Codes/Git/ROBUSfT/examples/Example2_IrregularTemplate.cpp"
+}
+]
