@@ -859,6 +859,14 @@ void Robusft::outlier_removal_algorithm(int crit_nMatches_stepI, double crit_MAD
 		}
 	}
 
+void Robusft::calculate_warp()
+{
+	// Mesh_transformed_stepIII = warp(bbs, Warp_nC, Warp_er, K, Matches_template_final, Matches_image_final, Template.Mesh_project);
+	DoubleVector2D ctrlpts_final(BBS_Function(bbs, Matches_template_final, Matches_image_final, K, Warp_nC, Warp_er));
+    DoubleVector2D mesh_2D_transformed = BBS_Evaluation(bbs, ctrlpts_final, Template.Mesh_project, K, 0, 0);
+	Mesh_transformed_stepIII = mesh_2D_transformed;
+}
+
 void Robusft::set_sightlines()
 	{
 		Sightlines.clear();
@@ -1156,7 +1164,8 @@ void Robusft::pipeline_CPU()
 				auto start_Warp = chrono::high_resolution_clock::now();
 
 				// Calculating Warp W3
-				Mesh_transformed_stepIII = warp(bbs, Warp_nC, Warp_er, K, Matches_template_final, Matches_image_final, Template.Mesh_project);
+				// Mesh_transformed_stepIII = warp(bbs, Warp_nC, Warp_er, K, Matches_template_final, Matches_image_final, Template.Mesh_project);
+				calculate_warp();
 				
 				auto stop_Warp = chrono::high_resolution_clock::now();
 				if(ROBUSfT_report) cout << "Final Warp CPU Thread = " << std::chrono::duration<double>(stop_Warp - start_Warp).count() << " (s)" << endl;

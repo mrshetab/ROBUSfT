@@ -113,6 +113,7 @@ public:
 	void capture_image(VideoCapture cap);
 	void match(float ratio_thresh = 0.8f);
 	void outlier_removal_algorithm(int crit_nMatches_stepI = 50, double crit_MAD = 2.5, double alpha_s = 0.07);
+	void calculate_warp();
 	void set_sightlines();
 	void shapeInference();
 	void resetVariables();

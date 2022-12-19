@@ -1218,38 +1218,59 @@ DoubleVector1D difference_of_vectors(DoubleVector2D v1, DoubleVector2D v2)
     DoubleVector1D percentage(n);
     for (int i = 0; i < n; i++)
     {
-        vector<double> v(v1[i].size() + v2[i].size());
-        vector<double> v_prime(v1[i].size() + v2[i].size());
-        vector<double>::iterator it, st;
-        vector<double>::iterator it2, st2;
-        it = set_union(v1[i].begin(),
-            v1[i].end(),
-            v2[i].begin(),
-            v2[i].end(),
-            v.begin());
+        for (int j = 0; j < v1[i].size(); j++)
+            total[i].push_back(v1[i][j]);
 
-        for (st = v.begin(); st != it; ++st)
-        {
-            total[i].push_back(*st);
-        }
-
-        it2 = set_intersection(v1[i].begin(),
-            v1[i].end(),
-            v2[i].begin(),
-            v2[i].end(),
-            v_prime.begin());
-
-        for (st2 = v_prime.begin(); st2 != it2; ++st2)
-        {
-            common[i].push_back(*st2);
-        }
-
+        for (int j = 0; j < v2[i].size(); j++)
+            if(find_in_vector(total[i], v2[i][j]) == -2)
+                total[i].push_back(v2[i][j]);
+            else
+                common[i].push_back(v2[i][j]);
+        
         if (total[i].size() > 0)
             percentage[i] = 100 * (total[i].size() - common[i].size()) / total[i].size();
         else
             percentage[i] = 101.0;
-
     }
+    
+    // int n(v1.size());
+    // DoubleVector2D total(n);
+    // DoubleVector2D common(n);
+    // DoubleVector1D percentage(n);
+    // for (int i = 0; i < n; i++)
+    // {
+    //     vector<double> v(v1[i].size() + v2[i].size());
+    //     vector<double> v_prime(v1[i].size() + v2[i].size());
+    //     vector<double>::iterator it, st;
+    //     vector<double>::iterator it2, st2;
+    //     it = set_union(v1[i].begin(),
+    //         v1[i].end(),
+    //         v2[i].begin(),
+    //         v2[i].end(),
+    //         v.begin());
+
+    //     for (st = v.begin(); st != it; ++st)
+    //     {
+    //         total[i].push_back(*st);
+    //     }
+
+    //     it2 = set_intersection(v1[i].begin(),
+    //         v1[i].end(),
+    //         v2[i].begin(),
+    //         v2[i].end(),
+    //         v_prime.begin());
+
+    //     for (st2 = v_prime.begin(); st2 != it2; ++st2)
+    //     {
+    //         common[i].push_back(*st2);
+    //     }
+
+    //     if (total[i].size() > 0)
+    //         percentage[i] = 100 * (total[i].size() - common[i].size()) / total[i].size();
+    //     else
+    //         percentage[i] = 101.0;
+
+    // }
 
     return percentage;
 }
