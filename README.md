@@ -7,7 +7,7 @@ The current version of ROBUSfT is capable of tracking surfaces up to 30fps on a 
 
 Here is the video of the paper:
 
-[![Watch the video](https://github.com/mrshetab/ROBUSfT/blob/main/Screenshots/video_screenshot.png?raw=true)](https://youtu.be/-_Q7TqWgZ-A)
+[![Watch the video](https://github.com/mrshetab/ROBUSfT/blob/main/Screenshots/video_screenshot.png?raw=true)](https://youtu.be/5tFIf7-eEKg)
 
 
 ## Dependencies
