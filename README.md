@@ -30,7 +30,7 @@ In order to build the library you can run the following commands:
 mkdir build && cd build
 cmake ..
 make
-make install
+sudo make install
 ```
 ## Usage
 
